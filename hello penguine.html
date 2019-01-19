@@ -207,9 +207,15 @@
     }
   </style>
 <body> 
-  <audio autoplay loop>
+  <audio autoplay loop id="myaudio">
     <source src="baby_hello.mp3" type="audio/mpeg">
-  </audio>   
+  </audio> 
+
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.1;
+  </script>
+
     <div class="penguin">
       <div class="penguin-bottom">
         <div class="right-hand"></div>
